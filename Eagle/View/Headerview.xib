@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="Headerview" customModule="Eagle" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="26"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gut-0Z-BVk">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="26"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Arrivals" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3s7-ro-Msc">
+                            <rect key="frame" x="20" y="0.0" width="144" height="26"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="144" id="w3H-pL-EHJ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                            <color key="textColor" red="0.1960784314" green="0.21176470589999999" blue="0.26274509800000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F82-As-BlM">
+                            <rect key="frame" x="362" y="3" width="44" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="44" id="IKk-on-VQf"/>
+                                <constraint firstAttribute="height" constant="20" id="SrS-ov-jTi"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <state key="normal" title="View all">
+                                <color key="titleColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="ViewBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="S2H-dL-8B3"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="3s7-ro-Msc" firstAttribute="top" secondItem="gut-0Z-BVk" secondAttribute="top" id="ClY-Tl-Vp6"/>
+                        <constraint firstItem="3s7-ro-Msc" firstAttribute="leading" secondItem="gut-0Z-BVk" secondAttribute="leading" constant="20" id="HGT-Z1-SCf"/>
+                        <constraint firstItem="F82-As-BlM" firstAttribute="centerY" secondItem="3s7-ro-Msc" secondAttribute="centerY" id="NuO-TC-IFs"/>
+                        <constraint firstAttribute="trailing" secondItem="F82-As-BlM" secondAttribute="trailing" constant="8" id="dUQ-Ru-e9m"/>
+                        <constraint firstAttribute="bottom" secondItem="3s7-ro-Msc" secondAttribute="bottom" id="lBA-kC-nob"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="gut-0Z-BVk" secondAttribute="trailing" id="EYD-1Q-FCb"/>
+                <constraint firstItem="gut-0Z-BVk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="L1r-jl-Yya"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="gut-0Z-BVk" secondAttribute="bottom" id="Mku-gu-iaC"/>
+                <constraint firstItem="gut-0Z-BVk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="e6f-OU-nlU"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="title" destination="3s7-ro-Msc" id="QMt-Iq-bbB"/>
+                <outlet property="viewmoBtn" destination="F82-As-BlM" id="CWd-cg-wlR"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="-172.76785714285714"/>
+        </view>
+    </objects>
+</document>
